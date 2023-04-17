@@ -1,5 +1,5 @@
 import HeaderLogo from './HeaderLogo';
-import SideMenuButton from './SideMenuButton';
+import SideMenuButton from '../SideMenu/SideMenuButton';
 import HeaderMenuList from './HeaderMenuList';
 import UtilityNav from './UtilityNav';
 

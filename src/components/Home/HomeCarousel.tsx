@@ -1,12 +1,12 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import ArrowRightIcon from '../icons/ArrowRightIcon';
+import ArrowRightIcon from '../../icons/ArrowRightIcon';
 import { Link } from 'react-router-dom';
 
 const itemList = [
   {
     id: 111,
-    src: '/src/assets/img_shop_fashion.jpeg',
+    src: '/public/img_shop_fashion.jpeg',
     alt: 'fashion',
     title: '물빠진 청바지!',
     desc: '이제 막 도착한 패션 청바지를 구경해 보세요.',
@@ -14,7 +14,7 @@ const itemList = [
   },
   {
     id: 222,
-    src: '/src/assets/img_shop_digital.jpeg',
+    src: '/public/img_shop_digital.jpeg',
     alt: 'digital',
     title: '신속한 업무처리!',
     desc: '다양한 디지털 상품을 둘러보세요.',
@@ -22,7 +22,7 @@ const itemList = [
   },
   {
     id: 333,
-    src: '/src/assets/img_shop_grocery.jpeg',
+    src: '/public/img_shop_grocery.jpeg',
     alt: 'grocery',
     title: '신선한 식품!',
     desc: '농장 직배송으로 더욱 신선한 식료품을 만나보세요.',
@@ -36,7 +36,6 @@ export default function HomeCarousel() {
       autoPlay
       infiniteLoop
       showThumbs={false}
-      interval={5000}
       showStatus={false}
       className="carousel-container">
       {itemList.map((item) => {

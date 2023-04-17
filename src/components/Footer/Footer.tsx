@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import GithubIcon from '../icons/GithubIcon';
-import BlogIcon from '../icons/BlogIcon';
+import GithubIcon from '../../icons/GithubIcon';
+import BlogIcon from '../../icons/BlogIcon';
 
 export default function Footer() {
   return (

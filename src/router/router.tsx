@@ -1,12 +1,11 @@
-import { createBrowserRouter, Navigate } from 'react-router-dom';
-import Root from '../components/Root';
+import { createBrowserRouter } from 'react-router-dom';
+import Root from '../pages/Root';
 import Home from '../pages/Home';
-import Fashion from '../pages/Fashion';
-import Accessory from '../pages/Accessory';
-import Digital from '../pages/Digital';
 import Cart from '../pages/Cart';
 import Product from '../pages/Product';
 import NotFound from '../pages/NotFound';
+import CategoryPage from '../pages/CategoryPage';
+import Error from '../pages/Error';
 
 const router = createBrowserRouter([
   {
@@ -19,15 +18,15 @@ const router = createBrowserRouter([
       },
       {
         path: 'fashion',
-        element: <Fashion />,
+        element: <CategoryPage />,
       },
       {
         path: 'accessory',
-        element: <Accessory />,
+        element: <CategoryPage />,
       },
       {
         path: 'digital',
-        element: <Digital />,
+        element: <CategoryPage />,
       },
       {
         path: 'product/:id',
@@ -43,10 +42,10 @@ const router = createBrowserRouter([
       },
       {
         path: '*',
-        element: <Navigate to="/404" />,
+        element: <NotFound />,
       },
     ],
-    errorElement: <Navigate to="/404" />,
+    errorElement: <Error />,
   },
 ]);
 

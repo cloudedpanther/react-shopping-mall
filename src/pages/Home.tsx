@@ -1,5 +1,5 @@
-import CategorySectionList from '../components/CategorySectionList';
-import HomeCarousel from '../components/HomeCarousel';
+import CategorySectionList from '../components/Home/CategorySectionList';
+import HomeCarousel from '../components/Home/HomeCarousel';
 
 export default function Home() {
   return (

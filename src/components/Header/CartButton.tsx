@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import CartIcon from '../icons/CartIcon';
+import CartIcon from '../../icons/CartIcon';
 import CartBadge from './CartBadge';
 
 export default function CartButton() {
